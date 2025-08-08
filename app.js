@@ -1,5 +1,5 @@
 const GEOJSON_URL = 'resonance-spots.geojson';
-const RADIUS_M = 150; // 近接判定 半径(m)
+const RADIUS_M = 50000; // 近接判定 半径(m)
 
 const $status = document.getElementById('status');
 const $cards  = document.getElementById('cards');
