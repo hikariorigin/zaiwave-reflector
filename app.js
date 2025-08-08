@@ -1,5 +1,7 @@
-const GEOJSON_URL = 'resonance-spots.geojson';
-const RADIUS_M = 50000; // 近接判定 半径(m)
+// URLで ?r=50000 みたいに半径を変更できる
+const url = new URL(location.href);
+const RADIUS_M = Number(url.searchParams.get('r') || '150'); // 既定150
+console.log('[NL] RADIUS_M =', RADIUS_M);
 
 const $status = document.getElementById('status');
 const $cards  = document.getElementById('cards');
