@@ -1,6 +1,7 @@
-const CACHE_NAME = 'nl-cache-v1';
-const ASSETS = ['.', 'index.html', 'app.js', 'manifest.webmanifest', 'resonance-spots.geojson'];
-
+// sw.js
+const CACHE_NAME = 'nl-cache-v2';
+const ASSETS = ['.', 'index.html', 'manifest.webmanifest', 'resonance-spots.geojson']; 
+// ← 'app.js' は外す
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)));
 });
