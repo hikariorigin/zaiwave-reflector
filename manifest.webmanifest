@@ -5,5 +5,5 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "description": "Location-triggered ZINE resonance (offline-ready PWA).",
-  "icons": []
+  "icons": [icon-192.png / icon-512.png］
 }
