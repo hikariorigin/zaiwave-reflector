@@ -95,6 +95,5 @@ async function maybeNotify(feature){
     reg.showNotification(title, { body: '近くでZINEが点灯しています。', tag: 'nl-resonance' });
   }catch(e){}
 }
-
 $locBtn?.addEventListener('click', scan);
 $noteBtn?.addEventListener('click', askNotification);
